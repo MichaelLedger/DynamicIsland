@@ -21,7 +21,8 @@ class DynamicIslandViewModel:  ObservableObject {
         
         startActivity(dynamicIslandType: dynamicIslandType, minute: minute + 5)
         
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [self] time in
+        //test: 1 -> 1 / 5.0
+        Timer.scheduledTimer(withTimeInterval: 1 / 5.0, repeats: true, block: { [self] time in
             
             if waitForFirstStep > 0 { waitForFirstStep -= 1 }
             
@@ -49,8 +50,8 @@ class DynamicIslandViewModel:  ObservableObject {
         })
         
         Task{
-            
-            try await Task.sleep(nanoseconds: UInt64(114 * Double(NSEC_PER_SEC)))
+            //test: 114 -> 114 / 5.0
+            try await Task.sleep(nanoseconds: UInt64(114 / 5.0 * Double(NSEC_PER_SEC)))
             stopActivity(dynamicIslandType: dynamicIslandType, percent: 90)
         }
     }
