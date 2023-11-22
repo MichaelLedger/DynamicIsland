@@ -8,6 +8,7 @@
 import Foundation
 import ActivityKit
 
+@available(iOS 16.1, *)
 class DynamicIslandViewModel:  ObservableObject {
     
     private var activity: Activity<ActivityAttributesDynamicIsland>? = nil
@@ -21,8 +22,7 @@ class DynamicIslandViewModel:  ObservableObject {
         
         startActivity(dynamicIslandType: dynamicIslandType, minute: minute + 5)
         
-        //test: 1 -> 1 / 5.0
-        Timer.scheduledTimer(withTimeInterval: 1 / 5.0, repeats: true, block: { [self] time in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [self] time in
             
             if waitForFirstStep > 0 { waitForFirstStep -= 1 }
             
@@ -50,8 +50,7 @@ class DynamicIslandViewModel:  ObservableObject {
         })
         
         Task{
-            //test: 114 -> 114 / 5.0
-            try await Task.sleep(nanoseconds: UInt64(114 / 5.0 * Double(NSEC_PER_SEC)))
+            try await Task.sleep(nanoseconds: UInt64(114 * Double(NSEC_PER_SEC)))
             stopActivity(dynamicIslandType: dynamicIslandType, percent: 90)
         }
     }
@@ -70,8 +69,16 @@ class DynamicIslandViewModel:  ObservableObject {
             
             contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: "Pickup by BO Tower on JBR St", percent: 0, value: minute, state: taxi.rawValue)
             
-            
-            activity = try? Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, contentState: contentState, pushType: nil)
+            do {
+                if #available(iOS 16.2, *) {
+                    let activityContent = ActivityContent(state: contentState, staleDate: nil)
+                    activity = try Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, content: activityContent, pushType: nil)
+                } else {
+                    activity = try Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, contentState: contentState, pushType: nil)
+                }
+            } catch let error {
+                print("[UploadWidget]:\(error.localizedDescription)")
+            }
             
         case DynamicIslandViewType.DataType.delivery.rawValue:
             
@@ -79,8 +86,16 @@ class DynamicIslandViewModel:  ObservableObject {
             
             contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: "Preparing your food", percent: 0, value: minute, state: delivery.rawValue)
            
-            
-            activity = try? Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, contentState: contentState, pushType: nil)
+            do {
+                if #available(iOS 16.2, *) {
+                    let activityContent = ActivityContent(state: contentState, staleDate: nil)
+                    activity = try Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, content: activityContent, pushType: nil)
+                } else {
+                    activity = try Activity<ActivityAttributesDynamicIsland>.request(attributes: attributes, contentState: contentState, pushType: nil)
+                }
+            } catch let error {
+                print("[UploadWidget]:\(error.localizedDescription)")
+            }
             
         default:
             break
@@ -90,7 +105,14 @@ class DynamicIslandViewModel:  ObservableObject {
     }
     
     public func stopActivityAnyway() {
-        stopActivity(dynamicIslandType: .deliveryExpanded, percent: 100)
+        let delivery: Delivery = Delivery.delivered
+        let description = "Bon Appetit!"
+
+        let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: description, percent: 100, value: 0, state: delivery.rawValue)
+       
+        Task{
+            await activity?.end(using: contentState, dismissalPolicy: .immediate)
+        }
     }
     
     private func stopActivity(dynamicIslandType : DynamicIslandViewType, percent: Double) {
@@ -142,6 +164,8 @@ class DynamicIslandViewModel:  ObservableObject {
                 
                 let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: taxi.imageName, title: taxi.title, description: description, percent: percent, value: minute, state: taxi.rawValue)
                 
+                print(description)
+                
                 Task{
                     await activity?.update(using: contentState)
                 }
@@ -157,6 +181,8 @@ class DynamicIslandViewModel:  ObservableObject {
                 }
                 
                 let contentState = ActivityAttributesDynamicIsland.ContentState(imageName: delivery.imageName, title: delivery.title, description: description, percent: percent, value: minute, state: delivery.rawValue)
+                
+                print(description)
                
                 Task{
                     await activity?.update(using: contentState)

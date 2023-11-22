@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		674A802B2B0E032E00A81AF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 674A802A2B0E032E00A81AF6 /* AppDelegate.m */; };
+		674A802E2B0E032E00A81AF6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 674A802D2B0E032E00A81AF6 /* SceneDelegate.m */; };
+		674A80312B0E032E00A81AF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 674A80302B0E032E00A81AF6 /* ViewController.m */; };
+		674A80342B0E032E00A81AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674A80322B0E032E00A81AF6 /* Main.storyboard */; };
+		674A80362B0E033000A81AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674A80352B0E033000A81AF6 /* Assets.xcassets */; };
+		674A80392B0E033000A81AF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674A80372B0E033000A81AF6 /* LaunchScreen.storyboard */; };
+		674A803C2B0E033000A81AF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 674A803B2B0E033000A81AF6 /* main.m */; };
+		674A80492B0E038B00A81AF6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674A80482B0E038B00A81AF6 /* WidgetKit.framework */; };
+		674A804B2B0E038B00A81AF6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674A804A2B0E038B00A81AF6 /* SwiftUI.framework */; };
+		674A804E2B0E038B00A81AF6 /* UploadWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A804D2B0E038B00A81AF6 /* UploadWidgetBundle.swift */; };
+		674A80502B0E038B00A81AF6 /* UploadWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A804F2B0E038B00A81AF6 /* UploadWidgetLiveActivity.swift */; };
+		674A80522B0E038B00A81AF6 /* UploadWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80512B0E038B00A81AF6 /* UploadWidget.swift */; };
+		674A80542B0E038D00A81AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674A80532B0E038D00A81AF6 /* Assets.xcassets */; };
+		674A80582B0E038D00A81AF6 /* UploadWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 674A80462B0E038B00A81AF6 /* UploadWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		674A806B2B0E042900A81AF6 /* DynamicIslandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A805F2B0E042900A81AF6 /* DynamicIslandViewModel.swift */; };
+		674A806C2B0E042900A81AF6 /* DynamicIslandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A805F2B0E042900A81AF6 /* DynamicIslandViewModel.swift */; };
+		674A806D2B0E042900A81AF6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80612B0E042900A81AF6 /* Double.swift */; };
+		674A806E2B0E042900A81AF6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80612B0E042900A81AF6 /* Double.swift */; };
+		674A806F2B0E042900A81AF6 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80632B0E042900A81AF6 /* Delivery.swift */; };
+		674A80702B0E042900A81AF6 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80632B0E042900A81AF6 /* Delivery.swift */; };
+		674A80712B0E042900A81AF6 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80642B0E042900A81AF6 /* Taxi.swift */; };
+		674A80722B0E042900A81AF6 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80642B0E042900A81AF6 /* Taxi.swift */; };
+		674A80732B0E042900A81AF6 /* DynamicIslandViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80652B0E042900A81AF6 /* DynamicIslandViewType.swift */; };
+		674A80742B0E042900A81AF6 /* DynamicIslandViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80652B0E042900A81AF6 /* DynamicIslandViewType.swift */; };
+		674A80752B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80662B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift */; };
+		674A80762B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80662B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift */; };
+		674A80772B0E042900A81AF6 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80682B0E042900A81AF6 /* DynamicIslandView.swift */; };
+		674A80782B0E042900A81AF6 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80682B0E042900A81AF6 /* DynamicIslandView.swift */; };
+		674A80792B0E042900A81AF6 /* TaxiExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80692B0E042900A81AF6 /* TaxiExpandedView.swift */; };
+		674A807A2B0E042900A81AF6 /* TaxiExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A80692B0E042900A81AF6 /* TaxiExpandedView.swift */; };
+		674A807B2B0E042900A81AF6 /* DeliveryExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A806A2B0E042900A81AF6 /* DeliveryExpandedView.swift */; };
+		674A807C2B0E042900A81AF6 /* DeliveryExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A806A2B0E042900A81AF6 /* DeliveryExpandedView.swift */; };
+		674A807D2B0E051D00A81AF6 /* UploadWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A804F2B0E038B00A81AF6 /* UploadWidgetLiveActivity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		674A80562B0E038D00A81AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674A801E2B0E032E00A81AF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674A80452B0E038B00A81AF6;
+			remoteInfo = UploadWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		674A805C2B0E038D00A81AF6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				674A80582B0E038D00A81AF6 /* UploadWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		674A80262B0E032E00A81AF6 /* DynamicIsland-OC-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DynamicIsland-OC-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		674A80292B0E032E00A81AF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		674A802A2B0E032E00A81AF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		674A802C2B0E032E00A81AF6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		674A802D2B0E032E00A81AF6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		674A802F2B0E032E00A81AF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		674A80302B0E032E00A81AF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		674A80332B0E032E00A81AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		674A80352B0E033000A81AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		674A80382B0E033000A81AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		674A803A2B0E033000A81AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674A803B2B0E033000A81AF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		674A80462B0E038B00A81AF6 /* UploadWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UploadWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		674A80482B0E038B00A81AF6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		674A804A2B0E038B00A81AF6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		674A804D2B0E038B00A81AF6 /* UploadWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadWidgetBundle.swift; sourceTree = "<group>"; };
+		674A804F2B0E038B00A81AF6 /* UploadWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		674A80512B0E038B00A81AF6 /* UploadWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadWidget.swift; sourceTree = "<group>"; };
+		674A80532B0E038D00A81AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		674A80552B0E038D00A81AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674A805F2B0E042900A81AF6 /* DynamicIslandViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicIslandViewModel.swift; sourceTree = "<group>"; };
+		674A80612B0E042900A81AF6 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		674A80632B0E042900A81AF6 /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		674A80642B0E042900A81AF6 /* Taxi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+		674A80652B0E042900A81AF6 /* DynamicIslandViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicIslandViewType.swift; sourceTree = "<group>"; };
+		674A80662B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityAttributesDynamicIsland.swift; sourceTree = "<group>"; };
+		674A80682B0E042900A81AF6 /* DynamicIslandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicIslandView.swift; sourceTree = "<group>"; };
+		674A80692B0E042900A81AF6 /* TaxiExpandedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiExpandedView.swift; sourceTree = "<group>"; };
+		674A806A2B0E042900A81AF6 /* DeliveryExpandedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryExpandedView.swift; sourceTree = "<group>"; };
+		674A807F2B0E070800A81AF6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		674A80232B0E032E00A81AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674A80432B0E038B00A81AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674A804B2B0E038B00A81AF6 /* SwiftUI.framework in Frameworks */,
+				674A80492B0E038B00A81AF6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		674A801D2B0E032E00A81AF6 = {
+			isa = PBXGroup;
+			children = (
+				674A80282B0E032E00A81AF6 /* DynamicIsland-OC-Demo */,
+				674A804C2B0E038B00A81AF6 /* UploadWidget */,
+				674A80472B0E038B00A81AF6 /* Frameworks */,
+				674A80272B0E032E00A81AF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		674A80272B0E032E00A81AF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				674A80262B0E032E00A81AF6 /* DynamicIsland-OC-Demo.app */,
+				674A80462B0E038B00A81AF6 /* UploadWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		674A80282B0E032E00A81AF6 /* DynamicIsland-OC-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				674A80292B0E032E00A81AF6 /* AppDelegate.h */,
+				674A802A2B0E032E00A81AF6 /* AppDelegate.m */,
+				674A802C2B0E032E00A81AF6 /* SceneDelegate.h */,
+				674A802D2B0E032E00A81AF6 /* SceneDelegate.m */,
+				674A802F2B0E032E00A81AF6 /* ViewController.h */,
+				674A80302B0E032E00A81AF6 /* ViewController.m */,
+				674A80322B0E032E00A81AF6 /* Main.storyboard */,
+				674A80352B0E033000A81AF6 /* Assets.xcassets */,
+				674A80372B0E033000A81AF6 /* LaunchScreen.storyboard */,
+				674A803A2B0E033000A81AF6 /* Info.plist */,
+				674A803B2B0E033000A81AF6 /* main.m */,
+				674A807F2B0E070800A81AF6 /* Bridging-Header.h */,
+			);
+			path = "DynamicIsland-OC-Demo";
+			sourceTree = "<group>";
+		};
+		674A80472B0E038B00A81AF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674A80482B0E038B00A81AF6 /* WidgetKit.framework */,
+				674A804A2B0E038B00A81AF6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		674A804C2B0E038B00A81AF6 /* UploadWidget */ = {
+			isa = PBXGroup;
+			children = (
+				674A805D2B0E042900A81AF6 /* Shared */,
+				674A804D2B0E038B00A81AF6 /* UploadWidgetBundle.swift */,
+				674A804F2B0E038B00A81AF6 /* UploadWidgetLiveActivity.swift */,
+				674A80512B0E038B00A81AF6 /* UploadWidget.swift */,
+				674A80532B0E038D00A81AF6 /* Assets.xcassets */,
+				674A80552B0E038D00A81AF6 /* Info.plist */,
+			);
+			path = UploadWidget;
+			sourceTree = "<group>";
+		};
+		674A805D2B0E042900A81AF6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				674A805E2B0E042900A81AF6 /* ViewModel */,
+				674A80602B0E042900A81AF6 /* Extensions */,
+				674A80622B0E042900A81AF6 /* Model */,
+				674A80672B0E042900A81AF6 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		674A805E2B0E042900A81AF6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				674A805F2B0E042900A81AF6 /* DynamicIslandViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		674A80602B0E042900A81AF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				674A80612B0E042900A81AF6 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		674A80622B0E042900A81AF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				674A80632B0E042900A81AF6 /* Delivery.swift */,
+				674A80642B0E042900A81AF6 /* Taxi.swift */,
+				674A80652B0E042900A81AF6 /* DynamicIslandViewType.swift */,
+				674A80662B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		674A80672B0E042900A81AF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				674A80682B0E042900A81AF6 /* DynamicIslandView.swift */,
+				674A80692B0E042900A81AF6 /* TaxiExpandedView.swift */,
+				674A806A2B0E042900A81AF6 /* DeliveryExpandedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		674A80252B0E032E00A81AF6 /* DynamicIsland-OC-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674A803F2B0E033000A81AF6 /* Build configuration list for PBXNativeTarget "DynamicIsland-OC-Demo" */;
+			buildPhases = (
+				674A80222B0E032E00A81AF6 /* Sources */,
+				674A80232B0E032E00A81AF6 /* Frameworks */,
+				674A80242B0E032E00A81AF6 /* Resources */,
+				674A805C2B0E038D00A81AF6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674A80572B0E038D00A81AF6 /* PBXTargetDependency */,
+			);
+			name = "DynamicIsland-OC-Demo";
+			productName = "DynamicIsland-OC-Demo";
+			productReference = 674A80262B0E032E00A81AF6 /* DynamicIsland-OC-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		674A80452B0E038B00A81AF6 /* UploadWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674A80592B0E038D00A81AF6 /* Build configuration list for PBXNativeTarget "UploadWidgetExtension" */;
+			buildPhases = (
+				674A80422B0E038B00A81AF6 /* Sources */,
+				674A80432B0E038B00A81AF6 /* Frameworks */,
+				674A80442B0E038B00A81AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UploadWidgetExtension;
+			productName = UploadWidgetExtension;
+			productReference = 674A80462B0E038B00A81AF6 /* UploadWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		674A801E2B0E032E00A81AF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					674A80252B0E032E00A81AF6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					674A80452B0E038B00A81AF6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 674A80212B0E032E00A81AF6 /* Build configuration list for PBXProject "DynamicIsland-OC-Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 674A801D2B0E032E00A81AF6;
+			productRefGroup = 674A80272B0E032E00A81AF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				674A80252B0E032E00A81AF6 /* DynamicIsland-OC-Demo */,
+				674A80452B0E038B00A81AF6 /* UploadWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		674A80242B0E032E00A81AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674A80392B0E033000A81AF6 /* LaunchScreen.storyboard in Resources */,
+				674A80362B0E033000A81AF6 /* Assets.xcassets in Resources */,
+				674A80342B0E032E00A81AF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674A80442B0E038B00A81AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674A80542B0E038D00A81AF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		674A80222B0E032E00A81AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674A80752B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift in Sources */,
+				674A80312B0E032E00A81AF6 /* ViewController.m in Sources */,
+				674A80772B0E042900A81AF6 /* DynamicIslandView.swift in Sources */,
+				674A806B2B0E042900A81AF6 /* DynamicIslandViewModel.swift in Sources */,
+				674A802B2B0E032E00A81AF6 /* AppDelegate.m in Sources */,
+				674A807D2B0E051D00A81AF6 /* UploadWidgetLiveActivity.swift in Sources */,
+				674A80732B0E042900A81AF6 /* DynamicIslandViewType.swift in Sources */,
+				674A80712B0E042900A81AF6 /* Taxi.swift in Sources */,
+				674A803C2B0E033000A81AF6 /* main.m in Sources */,
+				674A806D2B0E042900A81AF6 /* Double.swift in Sources */,
+				674A807B2B0E042900A81AF6 /* DeliveryExpandedView.swift in Sources */,
+				674A806F2B0E042900A81AF6 /* Delivery.swift in Sources */,
+				674A802E2B0E032E00A81AF6 /* SceneDelegate.m in Sources */,
+				674A80792B0E042900A81AF6 /* TaxiExpandedView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674A80422B0E038B00A81AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674A80762B0E042900A81AF6 /* ActivityAttributesDynamicIsland.swift in Sources */,
+				674A807C2B0E042900A81AF6 /* DeliveryExpandedView.swift in Sources */,
+				674A80522B0E038B00A81AF6 /* UploadWidget.swift in Sources */,
+				674A80702B0E042900A81AF6 /* Delivery.swift in Sources */,
+				674A804E2B0E038B00A81AF6 /* UploadWidgetBundle.swift in Sources */,
+				674A80742B0E042900A81AF6 /* DynamicIslandViewType.swift in Sources */,
+				674A80502B0E038B00A81AF6 /* UploadWidgetLiveActivity.swift in Sources */,
+				674A806E2B0E042900A81AF6 /* Double.swift in Sources */,
+				674A806C2B0E042900A81AF6 /* DynamicIslandViewModel.swift in Sources */,
+				674A807A2B0E042900A81AF6 /* TaxiExpandedView.swift in Sources */,
+				674A80722B0E042900A81AF6 /* Taxi.swift in Sources */,
+				674A80782B0E042900A81AF6 /* DynamicIslandView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		674A80572B0E038D00A81AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674A80452B0E038B00A81AF6 /* UploadWidgetExtension */;
+			targetProxy = 674A80562B0E038D00A81AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		674A80322B0E032E00A81AF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				674A80332B0E032E00A81AF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		674A80372B0E033000A81AF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				674A80382B0E033000A81AF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		674A803D2B0E033000A81AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		674A803E2B0E033000A81AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		674A80402B0E033000A81AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZA2PCCN27W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DynamicIsland-OC-Demo/Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developer.gavinxiang.DynamicIsland-OC-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DynamicIsland-OC-Demo/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		674A80412B0E033000A81AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZA2PCCN27W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DynamicIsland-OC-Demo/Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developer.gavinxiang.DynamicIsland-OC-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DynamicIsland-OC-Demo/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		674A805A2B0E038D00A81AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZA2PCCN27W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UploadWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UploadWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developer.gavinxiang.DynamicIsland-OC-Demo.UploadWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		674A805B2B0E038D00A81AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZA2PCCN27W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UploadWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UploadWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.developer.gavinxiang.DynamicIsland-OC-Demo.UploadWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		674A80212B0E032E00A81AF6 /* Build configuration list for PBXProject "DynamicIsland-OC-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674A803D2B0E033000A81AF6 /* Debug */,
+				674A803E2B0E033000A81AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674A803F2B0E033000A81AF6 /* Build configuration list for PBXNativeTarget "DynamicIsland-OC-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674A80402B0E033000A81AF6 /* Debug */,
+				674A80412B0E033000A81AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674A80592B0E038D00A81AF6 /* Build configuration list for PBXNativeTarget "UploadWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674A805A2B0E038D00A81AF6 /* Debug */,
+				674A805B2B0E038D00A81AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 674A801E2B0E032E00A81AF6 /* Project object */;
+}
